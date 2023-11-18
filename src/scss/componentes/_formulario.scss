@@ -1,0 +1,45 @@
+@use "base/variables" as v;
+@use 'base/mixins' as m;
+
+.formulario{
+  width: 90%;
+  margin: 0 auto;
+  padding: 5rem 0;
+  @include m.desktop {
+    width: 60%;
+  }
+}
+.campo{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+  box-sizing: border-box;
+
+  label{
+    flex: 0 0 3rem;
+  }
+  input{
+    flex: 1;
+    border: none;
+    border-radius: 1rem;
+    padding: calc(v.$separacion / 4);
+  }
+}
+
+
+.formulario-crear {
+  width: 90%;
+
+  @include m.desktop {
+    .grupo {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: space-between;
+
+      .campo {
+        width: 45%;
+      }
+    }
+  }
+}

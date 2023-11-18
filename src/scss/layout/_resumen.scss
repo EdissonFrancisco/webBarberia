@@ -1,0 +1,24 @@
+@use 'base/variables' as v;
+
+.contenedor-servicio {
+  display: grid;
+  gap: 2rem;
+  grid-auto-rows: 12rem;
+  grid-template-columns: repeat(auto-fit,minmax(min(90%,24rem),1fr));
+  border-radius: 2rem;
+  text-align: center;
+}
+
+.card-servicio {
+  background-color: v.$azul;
+  border-radius: 2rem;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+
+  span {
+    color: v.$negro;
+    font-weight: v.$bold;
+    font-size: 2.4rem;
+  }
+}

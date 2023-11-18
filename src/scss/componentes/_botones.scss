@@ -1,0 +1,11 @@
+@use "base/variables" as v;
+@use 'base/mixins' as m;
+
+.boton {
+  @include m.boton(v.$azul, v.$blanco);
+  @include m.telefono {
+    width: auto;
+    margin: 5rem auto;
+    border-radius: 0.8rem;
+  }
+}
